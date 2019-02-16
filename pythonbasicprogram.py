@@ -210,3 +210,21 @@ while 1:
                 count += 1
             if count > 0:
                 break
+    if choice == 9:
+
+        x, i = 5, 0
+        n = 0
+        for i in range(x):  # printing floor
+            for j in range((x - 1), i, -1):
+                print(' ', end='')
+            for in_ in range((x - 1) - i, x + 1):
+                if not (in_ + 1) % 2 == 0:
+                    print(in_ + 1, end='')
+                else:
+                    print(' ', end='')
+            for in_ in range((x - 1) - i, x):
+                if (in_ + 1) % 2 == 0:
+                    print(in_ + 1, end='')
+                else:
+                    print(' ', end='')
+            print()
