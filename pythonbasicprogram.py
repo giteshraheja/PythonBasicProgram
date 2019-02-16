@@ -210,6 +210,7 @@ while 1:
                 count += 1
             if count > 0:
                 break
+
     if choice == 9:
 
         x, i = 5, 0
@@ -228,3 +229,4 @@ while 1:
                 else:
                     print(' ', end='')
             print()
+
