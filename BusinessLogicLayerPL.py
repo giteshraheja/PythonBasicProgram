@@ -1,3 +1,4 @@
+# Todo: add if __name__ == "__main__":
 # BLL
 
 # 1.add_function_performed
@@ -182,45 +183,47 @@ def exit():
 # PL
 # Create PL
 
-dic = {'1234567890': ['id123456', 'idane', 35, 1234567890], '9541214954': ['id098765', 'idname', 26, 9541214954]}
+if __name__ == "__main__":
 
-i = 0
+    dic = {'1234567890': ['id123456', 'idane', 35, 1234567890], '9541214954': ['id098765', 'idname', 26, 9541214954]}
 
-while 1:
-    print("\n 1. Add Customer \n 2. Search \n 3. Delete \n 4. Modify \n 5. Display All \n 6. Exit \n")
-    choice = input("Enter your Choice ")
-    if choice == '1':
-        obj = cms()
-        obj.name = obj.getname()
-        obj.id1 = obj.getid(obj.name)
-        obj.age = obj.getage()
-        obj.mobile = obj.getmobile()
-        li = [obj.id1, obj.name, obj.age, obj.mobile]
-        dic.update({obj.mobile: li})
-        for e in range(30):
-            print("*", end='*')
-        print("\nRecord Added Successfully")
-        for e in range(30):
-            print("*", end='*')
-    elif choice == '2':
-        obj = cms()
-        obj.mobile = obj.searchmobile()
-        obj.displayusingdict()
-        for e in range(30):
-            print("*", end='*')
-    elif choice == '3':
-        cms.deleteusingmobile()
-        for e in range(30):
-            print("*", end='*')
-    elif choice == '4':
-        obj = cms()
-        obj.modifyusingmobie(dic)
-        for e in range(30):
-            print("*", end='*')
-    elif choice == '5':
-        cms.displayalldata()
-        for e in range(30):
-            print("*", end='*')
-    elif choice == '6':
-        exit()
+    i = 0
+
+    while 1:
+        print("\n 1. Add Customer \n 2. Search \n 3. Delete \n 4. Modify \n 5. Display All \n 6. Exit \n")
+        choice = input("Enter your Choice ")
+        if choice == '1':
+            obj = cms()
+            obj.name = obj.getname()
+            obj.id1 = obj.getid(obj.name)
+            obj.age = obj.getage()
+            obj.mobile = obj.getmobile()
+            li = [obj.id1, obj.name, obj.age, obj.mobile]
+            dic.update({obj.mobile: li})
+            for e in range(30):
+                print("*", end='*')
+            print("\nRecord Added Successfully")
+            for e in range(30):
+                print("*", end='*')
+        elif choice == '2':
+            obj = cms()
+            obj.mobile = obj.searchmobile()
+            obj.displayusingdict()
+            for e in range(30):
+                print("*", end='*')
+        elif choice == '3':
+            cms.deleteusingmobile()
+            for e in range(30):
+                print("*", end='*')
+        elif choice == '4':
+            obj = cms()
+            obj.modifyusingmobie(dic)
+            for e in range(30):
+                print("*", end='*')
+        elif choice == '5':
+            cms.displayalldata()
+            for e in range(30):
+                print("*", end='*')
+        elif choice == '6':
+            exit()
 
