@@ -2,8 +2,9 @@ if __name__ == "__main__":
     while 1:
         choice = int(input(
             ''' \n \n Enter the choice \n 1. for Fibonacci Series \n 2. Print Average of numbers by my method \n 3. for right angled triangle by my method
-     4. Print backward triangle containing numbers instead of stars using my method \n 5. Print a Diamond by my method \n 6. Print stars using official method with official for
-     7. Printing 5th Figure of Diamond by official method\n 8. Printing 5th Figure of Diamond by my Method \n Press Enter To finish with error \n '''))
+ 4. Print backward triangle containing numbers instead of stars using my method \n 5. Print a Diamond by my method \n 6. Print stars using official method with official for
+ 7. Printing 5th Figure of Diamond by official method\n 8. Printing 5th Figure of Diamond by my Method \n 9. Print pattern of character from user \n
+ Press Enter To finish with error \n'''))
 
         if choice == 1:
             count = 0
@@ -213,21 +214,18 @@ if __name__ == "__main__":
                     break
 
         if choice == 9:
+            n = input("Enter character")
+            n = ord(n.upper()) + 1
+            for ch in range(65, n):
+                for col in range(65, 65 + n - ch):
+                    if col == (n - 1):
+                        continue
+                    print(chr(col), end='')
 
-            x, i = 5, 0
-            n = 0
-            for i in range(x):  # printing floor
-                for j in range((x - 1), i, -1):
-                    print(' ', end='')
-                for in_ in range((x - 1) - i, x + 1):
-                    if not (in_ + 1) % 2 == 0:
-                        print(in_ + 1, end='')
-                    else:
-                        print(' ', end='')
-                for in_ in range((x - 1) - i, x):
-                    if (in_ + 1) % 2 == 0:
-                        print(in_ + 1, end='')
-                    else:
-                        print(' ', end='')
+                for space in range(2, 2 * (ch - 65) + 1):
+                    print(" ", end='')
+
+                for col in range(64 + n - ch, 64, -1):
+                    print(chr(col), end='')
+
                 print()
-
