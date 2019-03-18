@@ -3,8 +3,8 @@ if __name__ == "__main__":
         choice = int(input(
             ''' \n \n Enter the choice \n 1. for Fibonacci Series \n 2. Print Average of numbers by my method \n 3. for right angled triangle by my method
  4. Print backward triangle containing numbers instead of stars using my method \n 5. Print a Diamond by my method \n 6. Print stars using official method with official for
- 7. Printing 5th Figure of Diamond by official method\n 8. Printing 5th Figure of Diamond by my Method \n 9. Print pattern of character from user \n
- Press Enter To finish with error \n'''))
+ 7. Printing 5th Figure of Diamond by official method\n 8. Printing 5th Figure of Diamond by my Method \n 9. Print pattern of character from user 
+ 10. Print abstarct patterns See yourself\n \nPress Enter To finish with error \n '''))
 
         if choice == 1:
             count = 0
@@ -228,4 +228,21 @@ if __name__ == "__main__":
                 for col in range(64 + n - ch, 64, -1):
                     print(chr(col), end='')
 
+                print()
+
+        if choice == 10:
+            n = input("Enter Digit upto make pattern less than 10")
+            n=int(n)
+            for i in range(1, n+1):
+                for e in range(n - i, -1, -1):
+                    print(" ", end="")
+                for j in range(0, i):
+                    print(j + 1, end="")
+                print()
+
+            for i in range(1, n+1):
+                for e in range(n - i, -1, -1):
+                    print(" ", end="")
+                for j in range(i, 0, -1):
+                    print(j, end="")
                 print()
