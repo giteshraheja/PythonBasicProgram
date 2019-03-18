@@ -4,4 +4,4 @@
 
 #Only 3 objects allowed in a class [fileName](https://github.com/giteshraheja/PythonBasicProgram/blob/master/only3objects.py)
 
-#Employee Resource Planning with classes and oops [fileName](https://github.com/giteshraheja/PythonBasicProgram/blob/master/Employee_BLL.py)
+#Employee Resource Planning with classes, oops and inheritance [fileName](https://github.com/giteshraheja/PythonBasicProgram/blob/master/Employee_BLL.py)
