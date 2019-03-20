@@ -232,15 +232,15 @@ if __name__ == "__main__":
 
         if choice == 10:
             n = input("Enter Digit upto make pattern less than 10")
-            n=int(n)
-            for i in range(1, n+1):
+            n = int(n)
+            for i in range(1, n + 1):
                 for e in range(n - i, -1, -1):
                     print(" ", end="")
                 for j in range(0, i):
                     print(j + 1, end="")
                 print()
 
-            for i in range(1, n+1):
+            for i in range(1, n + 1):
                 for e in range(n - i, -1, -1):
                     print(" ", end="")
                 for j in range(i, 0, -1):
